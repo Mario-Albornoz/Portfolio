@@ -115,7 +115,7 @@ const About = () => {
       </div>
 
       <div className= 'w-full flex content-center md:flex-row flex-col sm:mt-16 my-20 gap-12 justify-center items-center'>
-        <a href="src/assets/files/Two_column_CV_template_with_ModernCV.pdf" target="_blank" rel="noopener noreferrer"> 
+        <a href={`${import.meta.env.BASE_URL}src/assets/files/Two_column_CV_template_with_ModernCV.pdf`} target="_blank" rel="noopener noreferrer"> 
           <h3 className='flex flex-col items-center'>
             <img
               src={pdf}

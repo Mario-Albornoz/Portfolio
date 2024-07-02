@@ -157,6 +157,6 @@ export const projects = [
         theme: 'btn-back-green',
         name: 'Web Page Portfolio',
         description: 'Created a 3D web page portfolio using react, nodejs and three.js. Here showcase my front-end skills and at the same time have a original and interactive way of showing my experience and projects.',
-        link: 'https://github.com/adrianhajdin/threads',
+        link: 'https://github.com/Mario-Albornoz/Portfolio',
     }
 ];

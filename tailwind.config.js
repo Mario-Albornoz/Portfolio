@@ -18,7 +18,7 @@ export default {
           500: "#2b77e7"
         },
         'Home-Text': '#96351E',
-        'Nav-Bar': '#280a04'        
+        'Nav-Bar': '#280a04',      
       },
       fontFamily: {
         worksans: ["Work Sans", "sans-serif"],

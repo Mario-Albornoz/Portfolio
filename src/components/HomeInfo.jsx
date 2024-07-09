@@ -22,7 +22,7 @@ const renderContent = {
         <br />
         <br />
         <p className='neo-brutalism-brown info-btn'>
-        <h3 className='text-white text-opacity-90 text-xl'>Drag the screen to explore</h3> 
+        <span className='text-white text-opacity-90 text-xl'>Drag the screen to explore</span> 
         </p>
       </h1>
     </>

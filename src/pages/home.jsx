@@ -6,6 +6,7 @@ import Island from '../models/Island';
 import Sky from '../models/Sky';
 import Plane from '../models/Plane';
 import HomeInfo from '../components/HomeInfo';
+import Lighthouse from '../models/Lighthouse';
 
 
 
@@ -30,6 +31,20 @@ const Home = () => {
     return [screenScale, screenPosition, rotation];
   }
 
+  const adjustLighthouseForScreenSize = () => {
+    let screenScale = null;
+    let screenPosition = [0, -35, -120];
+    
+
+    if (window.innerWidth < 768) {
+      screenScale = [0.8, 0.8, 0.8]
+    } else {
+      screenScale = [0.9, 0.9, 0.9]
+    }
+
+    return [screenScale, screenPosition]
+  }
+
   const adjustPlaneForScreenSize = () => {
     let screenScale, screenPosition;
 
@@ -39,18 +54,19 @@ const Home = () => {
       screenPosition = [0 , -1.5, 0]
     } else {
       screenScale = [3, 3, 3];
-      screenPosition = [0, -2, -4]
+      screenPosition = [0, -4, -5.5]
     }
 
     return [screenScale, screenPosition];
   }
 
   const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize();
+  const [lighthouseScale, lighthousePosition] = adjustLighthouseForScreenSize();
   const [planeScale, planePosition] = adjustPlaneForScreenSize();
  
   return (
     <section className='w-full h-screen relative'>
-    <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+    <div className="absolute top-20 left-0 right-0 z-10 flex items-center justify-center">
       {currentStage && <HomeInfo currentStage={currentStage} /> }
     </div>
       {/**Inside canvas you will find all 3D objects */}
@@ -60,18 +76,29 @@ const Home = () => {
       >
         {/**Suspense shows the loader during loading time */}
         <Suspense fallback={<Loader />}>
-          <directionalLight position={[0.25, 0.25, 0.5]} intensity={1} />
-          <ambientLight intensity={0.5} />
+          <directionalLight position={[7, 7, 7]} intensity={3} />
+          <ambientLight intensity={2} />
           <hemisphereLight skyColor="b1e1ff" groundColor="#000000" intensity={1} />
           
 
           
           <Sky isRotating={isRotating}/>
+          {/** 
           <Island 
             position = {islandPosition}
             scale = {islandScale}
             rotation = {[0.1, 4.7077, 0]}
-            /**pass rotation constants to the island to make it roate */
+            
+            isRotating = {isRotating}
+            setIsRotating = {setIsRotating}
+            setCurrentStage = {setCurrentStage}
+          />
+          */}
+          <Lighthouse 
+            position = {lighthousePosition}
+            scale = {lighthouseScale}
+            rotation = {[0, 6.1, 0]}
+            
             isRotating = {isRotating}
             setIsRotating = {setIsRotating}
             setCurrentStage = {setCurrentStage}

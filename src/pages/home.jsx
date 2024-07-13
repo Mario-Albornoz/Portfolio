@@ -18,14 +18,14 @@ const Home = () => {
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null 
-    let screenPosition = [0, -10, -45]
+    let screenPosition = [0, -170, -250]
     {/**screen position variables for position of the main object [x,y,z] */}
-    let rotation = [0.1, 4.7, 0];
+    let rotation = [0, 4.7, 0];
 
     if(window.innerWidth < 768) {
-      screenScale = [0.9, 0.9, 0.9];
+      screenScale = [0.4, 0.4, 0.4];
     } else {
-      screenScale = [1, 1, 1];
+      screenScale = [0.45, 0.45, 0.45];
     }
 
     return [screenScale, screenPosition, rotation];
@@ -50,11 +50,11 @@ const Home = () => {
 
 
     if(window.innerWidth < 768) {
-      screenScale = [1.5, 1.5, 1.5];
-      screenPosition = [0 , -1.5, 0]
+      screenScale = [1.75, 1.75, 1.75];
+      screenPosition = [0 , -3, -3]
     } else {
-      screenScale = [3, 3, 3];
-      screenPosition = [0, -4, -5.5]
+      screenScale = [4, 4, 4];
+      screenPosition = [0, -4.75, -11]
     }
 
     return [screenScale, screenPosition];
@@ -76,25 +76,26 @@ const Home = () => {
       >
         {/**Suspense shows the loader during loading time */}
         <Suspense fallback={<Loader />}>
-          <directionalLight position={[7, 7, 7]} intensity={3} />
-          <ambientLight intensity={2} />
-          <hemisphereLight skyColor="b1e1ff" groundColor="#000000" intensity={1} />
+          <directionalLight position={[1, 1, 1]} intensity={1} color="#FFDFB0"/>
+          <ambientLight  color="#666293" intensity={2.5}/>
+          <hemisphereLight  intensity={1} />
           
 
-          
+          {/** */}
           <Sky isRotating={isRotating}/>
-          {/** 
+ 
           <Island 
             position = {islandPosition}
             scale = {islandScale}
-            rotation = {[0.1, 4.7077, 0]}
+            rotation = {[0, 9.8, 0]}
             
             isRotating = {isRotating}
             setIsRotating = {setIsRotating}
             setCurrentStage = {setCurrentStage}
           />
-          */}
-          <Lighthouse 
+     
+         {/** 
+         <Lighthouse 
             position = {lighthousePosition}
             scale = {lighthouseScale}
             rotation = {[0, 6.1, 0]}
@@ -103,6 +104,7 @@ const Home = () => {
             setIsRotating = {setIsRotating}
             setCurrentStage = {setCurrentStage}
           />
+          */}
           <Plane 
             isRotating = {isRotating}
             scale = {planeScale}

@@ -24,7 +24,7 @@ const Island= ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
   const lastX = useRef(0);
   const rotationSpeed = useRef(0);
   /**this controls how fast the screen roates and for how long after the intial release */
-  const dampingFactor = 0.95;
+  const dampingFactor = 0.97;
 
   /**functions for clicking and realsing the mouse */
   const handlePointerDown = (e) => {
@@ -75,20 +75,21 @@ const Island= ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
 
       const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
-
+      
+      console.log(normalizedRotation)
       // Set the current stage based on the island's orientation
-      switch (true) {
-        case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
-          setCurrentStage(4);
+      switch (true) { 
+        case normalizedRotation >= 3.45 && normalizedRotation <= 3.6:
+          setCurrentStage(1);
           break;
-        case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
-          setCurrentStage(3);
-          break;
-        case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
+        case normalizedRotation >= 2.03 && normalizedRotation <= 2.32:
           setCurrentStage(2);
           break;
-        case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
-          setCurrentStage(1);
+        case normalizedRotation >= 0.78 && normalizedRotation <= 1.065:
+          setCurrentStage(3);
+          break;
+        case normalizedRotation >= 5.2 && normalizedRotation <= 5.38:
+          setCurrentStage(4);
           break;
         default:
           setCurrentStage(null);
@@ -113,34 +114,279 @@ const Island= ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
 
   return (
     <a.group ref={islandref}{...props} >
+      <group
+        position={[-22.112, 515.3, 15.287]}
+        rotation={[-Math.PI / 2, -0.001, 1.4]}
+        scale={[100, 100, 1.78]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Faro_Material003_0.geometry}
+          material={materials['Material.003']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Faro_Material003_0_1.geometry}
+          material={materials['Material.003']}
+        />
+      </group>
+      <group position={[-5.532, 265.794, 74.409]} rotation={[-1.384, -0.122, -0.255]} scale={2.88}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Pino_1001_Tronco_0.geometry}
+          material={materials.Tronco}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Pino_1001_Verde_Claro_0.geometry}
+          material={materials.Verde_Claro}
+        />
+      </group>
+      <group position={[59.575, 309.577, -75.956]} rotation={[-1.646, -0.073, 1.845]} scale={4.841}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Arbol_1001_Verde_Claro_0.geometry}
+          material={materials.Verde_Claro}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Arbol_1001_Material012_0.geometry}
+          material={materials['Material.012']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Arbol_1001_Tronco_0.geometry}
+          material={materials.Tronco}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Arbol_1001_Verde_Oscuro_0.geometry}
+          material={materials.Verde_Oscuro}
+        />
+      </group>
+      <group position={[68.025, 287.98, -18.233]} rotation={[-1.568, 0.122, 1.826]} scale={19.286}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Casa_1001_Verde_muy_Oscuro_0.geometry}
+          material={materials.Verde_muy_Oscuro}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Casa_1001_Material013_0.geometry}
+          material={materials['Material.013']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Casa_1001_Material014_0.geometry}
+          material={materials['Material.014']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Casa_1001_Material015_0.geometry}
+          material={materials['Material.015']}
+        />
+      </group>
       <mesh
-        geometry={nodes.polySurface944_tree_body_0.geometry}
-        material={materials.PaletteMaterial001}
+        castShadow
+        receiveShadow
+        geometry={nodes.Isla_Material002_0.geometry}
+        material={materials['Material.002']}
+        position={[0, 211.715, 0]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={100}
       />
       <mesh
-        geometry={nodes.polySurface945_tree1_0.geometry}
-        material={materials.PaletteMaterial001}
+        castShadow
+        receiveShadow
+        geometry={nodes.Valla_2_Material007_0.geometry}
+        material={materials['Material.007']}
+        position={[28.286, 186.67, -135.19]}
+        rotation={[1.89, -0.882, -1.694]}
+        scale={[-8.753, 8.753, 6.248]}
       />
       <mesh
-        geometry={nodes.polySurface946_tree2_0.geometry}
-        material={materials.PaletteMaterial001}
+        castShadow
+        receiveShadow
+        geometry={nodes.Valla_1_Material008_0.geometry}
+        material={materials['Material.008']}
+        position={[124.869, 114.683, -38.337]}
+        rotation={[1.942, -0.442, 2.975]}
+        scale={[37.769, 365.007, 37.769]}
       />
       <mesh
-        geometry={nodes.polySurface947_tree1_0.geometry}
-        material={materials.PaletteMaterial001}
+        castShadow
+        receiveShadow
+        geometry={nodes.Valla_3_Material006_0.geometry}
+        material={materials['Material.006']}
+        position={[-61.72, 281.042, -20.448]}
+        rotation={[1.577, 0.14, -0.523]}
+        scale={[-8.753, 8.753, 6.248]}
+      />
+
+      {/**Decour clouds */}
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Nube_1_Nube_0.geometry}
+        material={materials.Nube}
+        position={[55.342, 563.313, 200.61]}
+        rotation={[-1.577, -0.014, 1.517]}
+        scale={[52.192, 18.463, 18.875]}
       />
       <mesh
-        geometry={nodes.polySurface948_tree_body_0.geometry}
-        material={materials.PaletteMaterial001}
+        castShadow
+        receiveShadow
+        geometry={nodes.Nube_2_Nube_0.geometry}
+        material={materials.Nube}
+        position={[-72.062, 580.429, -35.664]}
+        rotation={[-Math.PI / 2, 0, 0.617]}
+        scale={[43.757, 41.813, 21.398]}
       />
       <mesh
-        geometry={nodes.polySurface949_tree_body_0.geometry}
-        material={materials.PaletteMaterial001}
+        castShadow
+        receiveShadow
+        geometry={nodes.Nube_4_Nube_0.geometry}
+        material={materials.Nube}
+        position={[60.528, 545.858, 260.545]}
+        rotation={[-Math.PI / 2, 0, 0.617]}
+        scale={[24.922, 27.27, 14.847]}
       />
-      <mesh
-        geometry={nodes.pCube11_rocks1_0.geometry}
-        material={materials.PaletteMaterial001}
-      />
+
+      {/**meshes for floating clouds for pop ups in order:[Home,about,projects,contact]
+      <group position={[165, 300, -323]} rotation={[-1.568, 0.02, 1.35]} scale={10} name='home house'>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Casa_1001_Verde_muy_Oscuro_0.geometry}
+          material={materials.Verde_muy_Oscuro}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Casa_1001_Material013_0.geometry}
+          material={materials['Material.013']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Casa_1001_Material014_0.geometry}
+          material={materials['Material.014']}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Casa_1001_Material015_0.geometry}
+          material={materials['Material.015']}
+        />
+      </group>*/}
+
+      <group name='home clouds'>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Nube_1_Nube_0.geometry}
+          material={materials.Nube}
+          position={[135, 292, -300]}
+          rotation={[-1.577, -0.014, 2.517]}
+          scale={[62.192, 28.463, 18.875]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Nube_4_Nube_0.geometry}
+          material={materials.Nube}
+          position={[170, 275, -310]}
+          rotation={[-Math.PI / 2, 0, -1]}
+          scale={[64.922, 45.27, 24.847]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Nube_4_Nube_0.geometry}
+          material={materials.Nube}
+          position={[110, 280, -335]}
+          rotation={[-Math.PI / 2, 0, 2.617]}
+          scale={[64.922, 27.27, 24.847]}
+        />
+      </group>
+      
+      <group name='about clouds'>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Nube_3_Nube_0.geometry}
+          material={materials.Nube}
+          position={[-335, 295, -200]}
+          rotation={[-Math.PI / 2, 0, 1]}
+          scale={[48.236, 19.871, 17.296]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Nube_2_Nube_0.geometry}
+          material={materials.Nube}
+          position={[-290, 295, -230]}
+          rotation={[-Math.PI / 2, 0, 2.817]}
+          scale={[43.757, 41.813, 21.398]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Nube_3_Nube_0.geometry}
+          material={materials.Nube}
+          position={[-310, 300, -170]}
+          rotation={[-Math.PI / 2, 0, 1]}
+          scale={[51.236, 22.871, 20.296]}
+        />
+      </group>
+      
+
+      
+      <group name='Project clouds'>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Nube_2_Nube_0.geometry}
+          material={materials.Nube}
+          position={[-320, 290, 220]}
+          rotation={[-Math.PI / 2, 0, 0.617]}
+          scale={[43.757, 41.813, 21.398]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Nube_2_Nube_0.geometry}
+          material={materials.Nube}
+          position={[-285, 295, 250]}
+          rotation={[-Math.PI / 2, 0, 2.817]}
+          scale={[43.757, 41.813, 21.398]}
+        />
+      </group>
+      
+      <group name='Contact Clouds'>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Nube_1_Nube_0.geometry}
+          material={materials.Nube}
+          position={[300, 290, 200]}
+          rotation={[-4.577, -0.014, 2.517]}
+          scale={[102.192, 48.463, 28.875]}
+        />
+      </group>
+
+
     </a.group>
   )
 }

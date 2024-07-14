@@ -115,14 +115,14 @@ const About = () => {
       </div>
 
       <div className= 'w-full flex content-center md:flex-row flex-col sm:mt-16 my-20 gap-12 justify-center items-center'>
-        <a href="https://github.com/Mario-Albornoz/Portfolio/blob/main/src/assets/files/Mario_Albornoz_CV.pdf" target="_blank" rel="noopener noreferrer"> 
+        <a href="Portfolio/src/assets/files/Mario_Albornoz_CV.pdf" target="_blank" > 
           <h3 className='flex flex-col items-center'>
             <img
               src={pdf}
               alt=''
               className='w-12 h-12 object-contain'
             />
-            <span>Download Resume/CV</span>
+            <span>View Resume/CV</span>
           </h3>
         </a>
 

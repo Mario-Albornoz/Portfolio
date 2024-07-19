@@ -115,7 +115,7 @@ const About = () => {
       </div>
 
       <div className= 'w-full flex content-center md:flex-row flex-col sm:mt-16 my-20 gap-12 justify-center items-center'>
-        <a href="" target="_blank" rel="nonopener noreferrer"> 
+        <a href="https://github.com/Mario-Albornoz/Portfolio/blob/main/src/assets/files/Mario_Albornoz_CV.pdf" target="_blank" rel="nonopener noreferrer"> 
           <h3 className='flex flex-col items-center'>
             <img
               src={pdf}
@@ -126,7 +126,7 @@ const About = () => {
           </h3>
         </a>
 
-        <a href="https://github.com/Mario-Albornoz/Portfolio/blob/main/src/assets/files/Mario_Albornoz_CV.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Mario-Albornoz" target="_blank" rel="noopener noreferrer">
           <h3 className='flex flex-col items-center'>
             <img
               src={github}

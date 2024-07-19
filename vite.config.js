@@ -6,4 +6,4 @@ export default defineConfig({
   base: "/Portfolio/",
   plugins: [react()],
   assetsInclude: ['**/*.glb', '**/*.pdf']
-})
+});

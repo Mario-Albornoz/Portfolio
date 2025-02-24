@@ -67,7 +67,8 @@ const About = () => {
       <div className='py-16'>
         <h3 className='subhead-text'>Work Experience</h3>
           <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-          <p>Talk about work experience...fill later</p> 
+          <p>I've worked in multiple industries such as: Health, Customer service, production plant, and most recently
+            software engeneering. I have two years experience coding, from which 7 have been in a profesional capacity in Django as a Backend developer.</p> 
         </div>
 
         <div className='mt-12 flex'>
@@ -115,7 +116,7 @@ const About = () => {
       </div>
 
       <div className= 'w-full flex content-center md:flex-row flex-col sm:mt-16 my-20 gap-12 justify-center items-center'>
-        <a href="https://github.com/Mario-Albornoz/Portfolio/blob/main/src/assets/files/Mario_Albornoz_CV.pdf" target="_blank" rel="nonopener noreferrer"> 
+        <a href="/Portfolio/files/Mario Albornoz CV 2025.pdf" target="_blank" rel="noopener noreferrer"> 
           <h3 className='flex flex-col items-center'>
             <img
               src={pdf}

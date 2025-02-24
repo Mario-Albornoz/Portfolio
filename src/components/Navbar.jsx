@@ -1,10 +1,9 @@
 import { NavLink } from "react-router-dom";
-import { github } from "../assets/icons";
 import { lighthouseIcon } from "../assets/images";
 
 const Navbar = () => {
   return (
-    <header className="header">
+    <header className="header sticky top-0">
         {/**logo with initials */}
         <NavLink to="/" className="w-10 h-10 rounded-lg orange-gradient
         items-center justify-center flex font-bold shadow-md">

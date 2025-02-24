@@ -43,11 +43,6 @@ export const skills = [
         name: "JavaScript",
         type: "Frontend",
     },
-    {
-        imageUrl: mariadb,
-        name: "mariadb",
-        type: "Database",
-    },
 
     {
         imageUrl: nextjs,
@@ -78,18 +73,38 @@ export const skills = [
 ];
 
 export const experiences = [
+
     {
-        title: "Freelance",
-        company_name: "CoSeitea (Ecuador)",
+        title: "BackEnd developer",
+        company_name: "TeachEasy",
         icon: fill,
         iconBg: "#fdac6b",
-        date: "Feb 2022 - April 2023",
+        date: "Apr 2024 - Present",
+
         points: [
-            "Created description cards for products, for the implementation in the company's webpage as a summer vacation job.",
-            "Worked jointly with both store manager and the web developer to keep an organized and concise list of priorities and deliverables."
+            "Developed TeachEasy’s mobile application back-end completely..",
+            "Provided Basic CRUD features for all sections like: classes, subjects, curses, students, calendar event assessments, etc",
+            "Developed and implemented dynamic grading algorithms based on the Austrian school grading system.",
+            "Implemented features such as grades data export. (Exporting report card into excel format)",
+            "Implemented Photo-aided class creation. (User takes a picture of a list with student names, and the back-end recognizes that list, creates the students and enrolls them to the desired class.)",
+            "Managed Server Deployment on a Microsoft ISS server",
         ],
     },
     
+    {
+        title: "Computer Science Student",
+        company_name: "Gisma University of Applied Sciences, Potsdam",
+        icon: fill,
+        iconBg: "#b7e4c7",
+        date: "Oct 2023 - Present",
+        points: [
+            "Studying Computer Science with proffesors with ample experience and qualifications.",
+            "Placed second in Gisma's annual hackathon. With a start up Teach Easy, where the goal was to create an app to help Austrian teachers grade and keep track of their students accros differnt subjects.",
+            "Had relevant courses in Data Structures, Databases and Python programming.",
+        ],
+    },
+
+
     {
         title: "Medical Interpreter",
         company_name: "Interpretia (Ecuador)",
@@ -117,17 +132,18 @@ export const experiences = [
     },
 
     {
-        title: "Computer Science Student",
-        company_name: "Gisma University of Applied Sciences, Potsdam",
+        title: "Freelance",
+        company_name: "CoSeitea (Ecuador)",
         icon: fill,
-        iconBg: "#b7e4c7",
-        date: "Oct 2023 - Present",
+        iconBg: "#fdac6b",
+        date: "Feb 2022 - April 2023",
         points: [
-            "Studying Computer Science with proffesors with ample experience and qualifications.",
-            "Placed second in Gisma's annual hackathon. With a start up Teach Easy, where the goal was to create an app to help Austrian teachers grade and keep track of their students accros differnt subjects.",
-            "Had relevant courses in Data Structures, Databases and Python programming.",
+            "Created description cards for products, for the implementation in the company's webpage as a summer vacation job.",
+            "Worked jointly with both store manager and the web developer to keep an organized and concise list of priorities and deliverables."
         ],
     },
+
+
 ];
 
 export const socialLinks = [

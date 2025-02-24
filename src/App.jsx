@@ -15,7 +15,6 @@ const App = () => {
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>
-
     </main>
   )
 }

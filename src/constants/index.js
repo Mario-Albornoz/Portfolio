@@ -163,9 +163,9 @@ export const projects = [
     {
         iconUrl: arrowProjects,
         theme: 'btn-back-red',
-        name: 'Flappy Bird',
-        description: 'Developed a Flappy Bird game in python using exclusively the library pygame. Addtionally I added some features like a hardcore game mode. Finally designed and created art for new characters inspired on the famous Taylor Swift Eras Tour.',
-        link: 'https://github.com/Mario-Albornoz/FlappyBird',
+        name: 'Schülerly - Neuracity',
+        description: 'AI-powered education management platform for school teachers that automates content creation, assignments, curriculum alignment, and analytics to enhance teaching efficiency. In the future we will implement a protocol called multi model verification pipeline to verify the validity and accuracy of the generated material. We developed the front end with react and backend with Django',
+        link: 'https://github.com/Mario-Albornoz/Neuracity-FrontEnd',
     },
     {
         iconUrl: arrowProjects,
@@ -173,5 +173,28 @@ export const projects = [
         name: 'Web Page Portfolio',
         description: 'Created a 3D web page portfolio using react, nodejs and three.js. Here showcase my front-end skills and at the same time have a original and interactive way of showing my experience and projects.',
         link: 'https://github.com/Mario-Albornoz/Portfolio',
-    }
+    },
+    {
+        iconUrl: arrowProjects,
+        theme: 'btn-back-red',
+        name: 'Auxis - Coming soon...',
+        description: 'Its a financial analyst management system for medium size companies. It works by taking the data from electronic billing systems, processing it and transforming it into relevant charts and statistics which will help in the future decision making of that company. It will also integrate basic AI capability like linear regression to make projections based on previous data and other parameters. Made with react for front end and django for the backend',
+        link: '',
+    },
+    {
+        iconUrl: arrowProjects,
+        theme: 'btn-back-green',
+        name: 'PacMan Modded',
+        description: 'Pacman game made in Java, with an added feature, where after eating enough of the little pebbles the map starts moving and touching the wall immediatly makes the player loose all lives',
+        link: 'https://github.com/Mario-Albornoz/Portfolio',
+    },
+    {
+        iconUrl: arrowProjects,
+        theme: 'btn-back-red',
+        name: 'Flappy Bird',
+        description: 'Developed a Flappy Bird game in python using exclusively the library pygame. Addtionally I added some features like a hardcore game mode. Finally designed and created art for new characters inspired on the famous Taylor Swift Eras Tour.',
+        link: 'https://github.com/Mario-Albornoz/FlappyBird',
+    },
+    
+
 ];

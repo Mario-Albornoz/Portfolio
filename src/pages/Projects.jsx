@@ -12,8 +12,11 @@ const Projects = () => {
       </h1>
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <p>I've created a couple of my major proyects which showcase 
-          some of my skills from which I have learned a lot.</p> 
+        <p>
+          Here you can find a showcase of some of the projects I'm currently working on, as well as completed projects.
+          I've dabbled in various project areas such as web development, arcade games. Currently working on a AI powered Learning management system.
+          and a Financial Analytics and Business Intelligence System for Medium-Sized Companies, integrating forecasting through linear regression for better decision-making.
+          </p> 
       </div>
 
       <div className='flex flex-wrap my-20 gap-16'>
@@ -45,7 +48,7 @@ const Projects = () => {
                 rel="noopener noreffer"
                 className='font-semibold text-blue-600'
                 >
-                  Live Link
+                  Link to Repository
                 </Link>
               </div>
             </div> 

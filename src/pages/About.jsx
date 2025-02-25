@@ -22,10 +22,10 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>I am a computer science student based in Germany. I consider myself as a determined individual, who works best underpressure. I love working in an project oriented matter with clear goals and 
-          milestones. Due to my past experience I bring insights from a variety of fields, like: product manufacturing, medicine, and communications.
-          Furthermore, even though my journey coding has been relatively short, I'm passionate in coding and learning new skills. For me is always fun to become great at a new skill.
+          milestones. Due to my past experience I bring insights from a variety of fields, like: product manufacturing, medicine, communications, as well as having profesional experience as a Backend developer for the past 7 months.
+          Furthermore, even though my journey coding has been relatively short, I'm passionate in coding and learning. For me is always fun to become learn a new skill.
           I firmly believe that if you are going to do something you need to do it right. Whenever I face a challenge or learn something new I make sure I understand it fundamentally.
-          I look for why something works the way it does, and I don't stop until I grasp it at its most basic core. That way everything I learn becomes imprited in my mind and I never forget it.
+          I look for the reason why something works the way it does, and I like to go deeper until I grasp it at its core.
           That has paid off accross my profesional jobs and specially in my student career. I love new opurtunities and face challenges head on, no matter how intimidating or demanding they might be.
           </p> 
       </div>
@@ -36,7 +36,7 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          I decdided to study computer science, because I've always loved to play videogames, and was amazed at how a bunch of 1 and 0 could create a whole game. However for most of my life I was
+          I decdided to study computer science, because I've always loved to play videogames, and was amazed at how essentially a series 1's and 0's could create a whole game. However for most of my life I was
           intimidated to actually learn how to program and code. The learning curve always managed to scare me off. Nevertheless in 2023 I decided to finally take a course on EdX, and I took the Harvard Cs50 course.
           Since then I've loved every aspect of coding and even though I'm still learning every day, the path doesn't seem as scary anymore. I realized that when it comes to programing the important thing is to keep going 
           and not be discouraged by what you don't know, instead look at it as an importunity to reach even greater heights. 
@@ -67,7 +67,7 @@ const About = () => {
       <div className='py-16'>
         <h3 className='subhead-text'>Work Experience</h3>
           <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-          <p>I've worked in multiple industries such as: Health, Customer service, production plant, and most recently
+          <p>I've worked in multiple industries such as: Health, Customer service, production line/ logistics, and most recently
             software engeneering. I have two years experience coding, from which 7 have been in a profesional capacity in Django as a Backend developer.</p> 
         </div>
 

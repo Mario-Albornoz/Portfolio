@@ -116,7 +116,7 @@ const About = () => {
       </div>
 
       <div className= 'w-full flex content-center md:flex-row flex-col sm:mt-16 my-20 gap-12 justify-center items-center'>
-        <a href="/Portfolio/files/Mario Albornoz CV 2025.pdf" target="_blank" rel="noopener noreferrer"> 
+        <a href="/Portfolio/files/Mario_Albornoz_CV_2025.pdf" target="_blank" rel="noopener noreferrer"> 
           <h3 className='flex flex-col items-center'>
             <img
               src={pdf}

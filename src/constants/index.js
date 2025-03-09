@@ -16,6 +16,10 @@ import {
 
 } from "../assets/icons";
 
+import {
+    Neuracity_demo
+} from "../assets/videos";
+
 export const skills = [
     {
         imageUrl: css,
@@ -166,6 +170,7 @@ export const projects = [
         name: 'Schülerly - Neuracity',
         description: 'AI-powered education management platform for school teachers that automates content creation, assignments, curriculum alignment, and analytics to enhance teaching efficiency. In the future we will implement a protocol called multi model verification pipeline to verify the validity and accuracy of the generated material. We developed the front end with react and backend with Django',
         link: 'https://github.com/Mario-Albornoz/Neuracity-FrontEnd',
+        demo: Neuracity_demo
     },
     {
         iconUrl: arrowProjects,
@@ -173,6 +178,7 @@ export const projects = [
         name: 'Web Page Portfolio',
         description: 'Created a 3D web page portfolio using react, nodejs and three.js. Here showcase my front-end skills and at the same time have a original and interactive way of showing my experience and projects.',
         link: 'https://github.com/Mario-Albornoz/Portfolio',
+        demo: null
     },
     {
         iconUrl: arrowProjects,
@@ -180,6 +186,7 @@ export const projects = [
         name: 'Auxis - Coming soon...',
         description: 'Its a financial analyst management system for medium size companies. It works by taking the data from electronic billing systems, processing it and transforming it into relevant charts and statistics which will help in the future decision making of that company. It will also integrate basic AI capability like linear regression to make projections based on previous data and other parameters. Made with react for front end and django for the backend',
         link: '',
+        demo: null
     },
     {
         iconUrl: arrowProjects,

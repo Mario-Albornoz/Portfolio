@@ -18,7 +18,7 @@ import {
 
 import {
     Neuracity_demo
-} from "../assets/videos";
+} from "../../public/videos";
 
 export const skills = [
     {

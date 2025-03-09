@@ -170,7 +170,7 @@ export const projects = [
         name: 'Schülerly - Neuracity',
         description: 'AI-powered education management platform for school teachers that automates content creation, assignments, curriculum alignment, and analytics to enhance teaching efficiency. In the future we will implement a protocol called multi model verification pipeline to verify the validity and accuracy of the generated material. We developed the front end with react and backend with Django',
         link: 'https://github.com/Mario-Albornoz/Neuracity-FrontEnd',
-        demo: "public/videos/Neuracity_demo.mp4"
+        demo: `${import.meta.env.BASE_URL}videos/Neuracity_demo.mp4`
     },
     {
         iconUrl: arrowProjects,

@@ -124,7 +124,7 @@ export const experiences = [
     },
     {
         title: "Product Production Assistant",
-        company_name: "Seitea (Ecuador)",
+        company_name: "CoSeitea (Ecuador)",
         icon: fill,
         iconBg: "#fdac6b",
         date: "May 2023 - October 2023",
